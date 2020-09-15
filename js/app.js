@@ -3,6 +3,7 @@
 var array = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 var parent = document.getElementById('table');
+
 function headerTable() {
     var trElem = document.createElement('tr');
     parent.appendChild(trElem);
@@ -24,19 +25,19 @@ function headerTable() {
 
 headerTable();
 
-function Branch( brach, max, min, avCookies) {
+function Branch(brach, max, min, avCookies) {
     this.hours = array;
     this.name = brach;
     this.max = max;
     this.min = min;
     this.avCookies = avCookies;
-    this.total=0
+    this.total = 0
 
 }
-Branch.prototype.render = function () {
+Branch.prototype.render = function() {
 
     var trElem = document.createElement('tr');
-    
+
     parent.appendChild(trElem);
 
     var header = document.createElement('td');
@@ -47,8 +48,8 @@ Branch.prototype.render = function () {
 
     for (var i = 0; i < array.length; i++) {
         header = document.createElement('td');
-        this.total+=this.costomer();
-        header.textContent=this.costomer()
+        this.total += this.costomer();
+        header.textContent = this.costomer()
         trElem.appendChild(header);
 
     }
@@ -64,11 +65,11 @@ Branch.prototype.costomer = function() {
     return cookiesHourly;
 
 }
-var Seatel =new Branch('Seatle',65,23,6.3);
-var Tokio =new Branch('Tokyo',3,24,1.2);
-var Dubai =new Branch('Dubai',11,38,3.7);
-var Paris =new Branch('Paris',20,38,2.3);
-var Lima =new Branch('Lima',2,16,4.6);
+var Seatel = new Branch('Seatle', 65, 23, 6.3);
+var Tokio = new Branch('Tokyo', 3, 24, 1.2);
+var Dubai = new Branch('Dubai', 11, 38, 3.7);
+var Paris = new Branch('Paris', 20, 38, 2.3);
+var Lima = new Branch('Lima', 2, 16, 4.6);
 Seatel.render();
 Tokio.render();
 Dubai.render();
@@ -113,7 +114,6 @@ function ranNum(min, max, avCookies) {
 //     liEle.appendChild(spanEle);
 //     // console.log(typeof(Number(spanEle)));
 // }
-
 // var arrayEle = document.createElement('array');
 // arrayEle.textContent = this.spanEle;
 // main.appendChild(arrayEle);
