@@ -1,0 +1,21 @@
+                .hh {
+                    background-image: url(https://raw.githubusercontent.com/LTUC/amman-201d9/master/class-08/lab-b/assets/frosted-cookie.jpg);
+                    position: relative;
+                }
+                
+                h1 {
+                    position: fixed;
+                    top: 0;
+                    font-size: 55px;
+                    color: tomato;
+                    text-align: center;
+                }
+                
+                #table {
+                    height: 30%;
+                    border: 3px red dashed;
+                }
+                
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
