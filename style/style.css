@@ -1,3 +1,9 @@
+body {
+    background-image: url(/uu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hh {
     height: 300px;
     padding: 5%;
@@ -23,22 +29,49 @@ h1 {
 }
 
 #table {
+    border-radius: 30px;
     font-size: larger;
     width: 100%;
-    border: 3px red dashed;
+    border: 5px red dashed;
+    height: 400px;
+    margin-top: 10%;
+}
+
+th {
+    color: rgb(229, 255, 0);
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(139, 0, 0, 0.493);
+    color: rgb(201, 83, 201);
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: rgba(33, 204, 10, 0.514);
+    color: rgb(66, 137, 245);
 }
 
-.d {
+.dd {
+    color: yellow;
+}
+
+.d,
+.dd {
     margin: 10%;
 }
 
 footer {
+    font-size: x-large;
     background-image: url(https://raw.githubusercontent.com/LTUC/amman-201d9/master/class-08/lab-b/assets/chinook.jpg);
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 70%;
     background-position: right;
+}
+
+.pp {
+    background-color: rgba(47, 193, 212, 0.255);
 }
